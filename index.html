@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: var(--sectionHeight);
+    height: auto;
     justify-content:center;
     align-items: center;
     font-family: "Nirmala UI";
@@ -119,6 +119,7 @@
   .infoText h {
     font-size: 1.8em;
     padding-bottom: 1em;
+    padding-top: 1em;
     font-weight: 600;
   }
   
@@ -182,33 +183,7 @@
     transform: translateY(-8px);
   }
   
-  /* Switch from viewport to flex when desktop screen size is small to prevent spill-over */
-  @media (max-height: 1050px) {
-    .infoSection {
-     --sectionHeight: auto;
-    }
-  }
   
-  @media (min-height: 550px) {
-   .infoSection {
-    --sectionHeight: 100vh;
-    }
-  }
-  
-  @media (min-height: 590px) {
-   #ourTeam {
-    --sectionHeight: 100vh;
-    }
-    
-   #about {
-    --sectionHeight: 100vh;
-    }
-    
-    #contact {
-    --sectionHeight: 100vh;
-    }
-    
-  }
   
   /* Resize sections to account for mobile */
   @media (max-device-width: 500px) {
@@ -224,7 +199,6 @@
     }
     
     .infoSection {
-      --sectionHeight: 100vh; 
       font-size: 132%;
     }
     
@@ -243,6 +217,9 @@
     
     #contact-links {
       flex-direction: column;
+    }
+
+    #contact links a {
       padding: 0.6em 0em 0em 1em;
     }
   
@@ -259,7 +236,6 @@
   @media (max-device-width: 500px) and (orientation: landscape) {
   
       .infoSection {
-      --sectionHeight: auto;
       font-size: 80%; 
     }
   
@@ -573,7 +549,7 @@
       <a target="_blank" href="https://twitter.com/healcisio"><i class="fab fa-twitter"></i>   Twitter</a>
       <a target="_blank" href="https://www.linkedin.com/in/healcisio-inc-44580621a/"><i class="fab fa-linkedin"></i>   LinkedIn</a>
       <a target="_blank" href="https://github.com/healcisio"><i class="fab fa-github"></i>   GitHub</a>
-      <a href="mailto:support@healcisio.com"><i class="fas fa-at"></i>   Email</a>
+      <a href="mailto:aaron@healcisio.com"><i class="fas fa-at"></i>   Email</a>
       
     </div>
   
